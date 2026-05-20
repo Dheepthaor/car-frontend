@@ -13,7 +13,7 @@ export default function Messages() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://localhost:5000/api/chat/list", {
+      const res = await axios.get("https://car-backend-ofpj.onrender.com/api/chat/list", {
         headers: {
           Authorization: token,
         },

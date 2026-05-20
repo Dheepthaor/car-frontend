@@ -23,7 +23,7 @@ export default function UploadMedia() {
       type: state.type,
     });
 
-    const res = await fetch("http://localhost:5000/api/cars/add", {
+    const res = await fetch("https://car-backend-ofpj.onrender.com/api/cars/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

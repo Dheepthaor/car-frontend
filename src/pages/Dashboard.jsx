@@ -69,7 +69,7 @@ export default function Dashboard() {
 useEffect(() => {
   const fetchCars = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/cars/all");
+      const res = await fetch("https://car-backend-ofpj.onrender.com/api/cars/all");
       const data = await res.json();
 
       setDbCars(data);
