@@ -20,7 +20,7 @@ export default function ChatScreen() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `https://car-backend-ofpj.onrender.com/api/chat/${userId}`
+        `https://car-backend-ofpj.onrender.com/api/chat/${userId}`,
         {
           headers: {
             Authorization: token,
